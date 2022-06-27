@@ -22,7 +22,8 @@ describe("Given I am on alert and modals page", function () {
         cy.get(alertsAndModals.normMsgInfo).click();
         cy.get(alertsAndModals.closeNormMsgInfo).click();
     })
-    it("BOOTSTRAP MODALS - I Should be able to automate all fixtures under bootstrap modals", function () {
+
+    it("BOOTSTRAP MODALS - User should be able to launch single modal", function () {
         cy.get(alertsAndModals.popupadd).click();
         cy.get(alertsAndModals.alertsAndModalsBtn).click();
         cy.get(alertsAndModals.bootstrapModalsBtn).click()
@@ -30,18 +31,26 @@ describe("Given I am on alert and modals page", function () {
         cy.get(alertsAndModals.singleCloseBtn).click()
         cy.get(alertsAndModals.relaunchSingleModals).click()
         cy.get(alertsAndModals.saveChangesBtn).click()
+    })
+
+    it("BOOTSTRAP MODALS - User Should be able to launch multiple modals", function () {
+        cy.get(alertsAndModals.popupadd).click();
+        cy.get(alertsAndModals.alertsAndModalsBtn).click();
+        cy.get(alertsAndModals.bootstrapModalsBtn).click()
         cy.get(alertsAndModals.multiLaunchModalsBtn).click()
         cy.get(alertsAndModals.multipleCloseBtn).click()
         cy.get(alertsAndModals.relaunchMultiModals).click()
         cy.get(alertsAndModals.launchModals).click()
         cy.get(alertsAndModals.saveMultiChangesBtn).click()
 })
-it("WINDOW POPUP MODALS - I Should be able to automate all fixtures under window popup modals", function () {
+
+it("WINDOW POPUP MODALS - User should be able to follow on all social media", function () {
     cy.get(alertsAndModals.popupadd).click();
     cy.get(alertsAndModals.alertsAndModalsBtn).click();
     cy.get(alertsAndModals.windowPopUpModals).click()
 })
-it("PROGRESS BAR MODALS - I Should be able to automate all fixtures under progress bar modals", function () {
+
+it("PROGRESS BAR MODALS - User should be able to show all dialog", function () {
     cy.get(alertsAndModals.popupadd).click();
     cy.get(alertsAndModals.alertsAndModalsBtn).click();
     cy.get(alertsAndModals.progressBarModals).click()
@@ -52,7 +61,8 @@ it("PROGRESS BAR MODALS - I Should be able to automate all fixtures under progre
     cy.get(alertsAndModals.showDialog3).click()
     cy.wait(6000)
 })
-it("JAVASCRIPT ALERT - I Should be able to automate all fixtures under javascript alert", function () {
+
+it("JAVASCRIPT ALERT - User should be able to confirm all popups", function () {
     cy.get(alertsAndModals.popupadd).click();
     cy.get(alertsAndModals.alertsAndModalsBtn).click();
     cy.get(alertsAndModals.javascriptAlert).click()
@@ -60,12 +70,25 @@ it("JAVASCRIPT ALERT - I Should be able to automate all fixtures under javascrip
     cy.get(alertsAndModals.javaScriptBox2).click()
     //cy.get(alertsAndModals.javaScriptBox3).click()
 })
-it("FILE DOWNLOAD - I Should be able to automate all fixtures under file download", function () {
+
+it("FILE DOWNLOAD - I Should be able to enter preferred data", function () {
     cy.get(alertsAndModals.popupadd).click();
     cy.get(alertsAndModals.alertsAndModalsBtn).click();
     cy.get(alertsAndModals.fileDownload).click()
     cy.get(alertsAndModals.textBox).type(alertsAndModals.textWritten)
+})
+ 
+it("FILE DOWNLOAD - I Should be able to genarate file", function () {
+    cy.get(alertsAndModals.popupadd).click();
+    cy.get(alertsAndModals.alertsAndModalsBtn).click();
+    cy.get(alertsAndModals.fileDownload).click()
     cy.get(alertsAndModals.generateFileBtn).click()
+})
+
+it("FILE DOWNLOAD - I Should be able to download file", function () {
+    cy.get(alertsAndModals.popupadd).click();
+    cy.get(alertsAndModals.alertsAndModalsBtn).click();
+    cy.get(alertsAndModals.fileDownload).click()
     cy.get(alertsAndModals.downloadBtn).click()
 })
 })

@@ -4,14 +4,15 @@ beforeEach(function () {
     cy.visit('/')
 
 });
-it("OTHERS/DRAG AND DROP - I Should be able to Automate all Others fixtures ", function () {
+it("OTHERS/DRAG AND DROP - User should be able to drag and drop an item to list ", function () {
     cy.get(others.popupadd).click();
     cy.get(others.othersDropdown).click();
     cy.get(others.drangAndDropBtn).click();
     cy.get(others.draggable1).click()
     //cy.get(others.dropZone1).drop()
 })
-it("DYNAMIC DATA LOADING - I Should be able to Automate all dynamic data loading fixtures ", function () {
+
+it("DYNAMIC DATA LOADING - User should be able to get new users ", function () {
     cy.get(others.popupadd).click();
     cy.get(others.othersDropdown).click();
     cy.get(others.dynamicDataLoadingBtn).click()
@@ -22,7 +23,7 @@ it("DYNAMIC DATA LOADING - I Should be able to Automate all dynamic data loading
     cy.get(others.getNewUserBtn2).click()
     cy.wait(4000)
 })
-it("CHARTS DEMO - I Should be able to Automate all charts demo fixtures ", function () {
+it("CHARTS DEMO - User should be able to see charts ", function () {
     cy.get(others.popupadd).click();
     cy.get(others.othersDropdown).click()
     cy.get(others.chartsDemo).click()

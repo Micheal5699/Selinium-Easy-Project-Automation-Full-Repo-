@@ -24,6 +24,11 @@ export const inputforms = {
     ageGroupBtn2: ".panel-body > :nth-child(3) > :nth-child(3)",
     ageGroupBtn3: ".panel-body > :nth-child(3) > :nth-child(4",
     getValueBtn: ".panel-body > .btn",
+    selectDropdownListBtn:".open > .dropdown-menu > :nth-child(4) > a",
+    selectDayDropdown:"#select-demo",
+    selectState:"[value='New Jersey']",
+    firstSelectedBtn:"#printMe",
+    getAllSelectedBtn:"#printAll",
     ajaxFormSubmitBtn: ".open > .dropdown-menu > :nth-child(6) > a",
     emptyField: "#title",
     nameText: "Popoola Ibukun Micheal",
@@ -57,7 +62,9 @@ export const inputforms = {
     selectCountryBtn: ":nth-child(2) > .panel > .panel-body > .select2 > .selection > .select2-selection",
     countrySelected: "#select2-country-results > :nth-child(2)",
     selectStateBtn: ".select2-search__field",
-    //usOutlyingTerritory:"#select2-dhl8-container",
+    selectTerritory:"#select2-r5t8-container",
+    selectUsOutliningTerritory:":nth-child(4) > .panel > .panel-body > .select2 > .selection > .select2-selection",
+    CategoryDropDown:"#files",
 }
 export const datepickers = {
     popupadd: ".at-cm-no-button",
@@ -242,6 +249,8 @@ export const listbox  = {
     inputsearch5:"#input-search",
     searchText5:"Arman Cheyia",
     faceIcon:".col-sm-6 > .info-block > .square-box",
+    addAllbtn:".pAddAll",
+    removeAllBtn:".pRemoveAll",
 }
 export const others  = {
     popupadd: ".at-cm-no-button",
